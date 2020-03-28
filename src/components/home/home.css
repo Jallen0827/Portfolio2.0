@@ -1,0 +1,367 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.work{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/2165.jpg')
+}
+
+.backgroundImg{
+    height:100vh;
+    background-image: url('../../assets/2165_blur.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:36px;
+    filter: blur(8px);
+    /* opacity: 0.1; */
+}
+
+.techPort{
+    text-transform: uppercase;
+    height: 100vh;
+    width: 100vw;
+}
+
+.techPort-text {    
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: -53vh;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.mantra{
+    position: absolute;
+    line-height: 3.5vh;
+    top: 35vh;
+    left: 15vw;
+    text-transform: uppercase;
+    font-size: 3vw;
+    letter-spacing: 3px;
+    font-weight: 1000;
+    color: #ffffff;
+    animation-name: slide2;
+    animation-delay: 4000ms;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    border-left: 5px solid rgb(255,172,0);
+    padding-left: 2vw;
+}
+
+.mantra-hide{
+    position: absolute;
+    line-height: 3.5vh;
+    top: 35vh;
+    left: 15vw;
+    text-transform: uppercase;
+    font-size: 3vw;
+    letter-spacing: 3px;
+    font-weight: 1000;
+    color: #ffffff;
+    animation-name: slide2;
+    animation-delay: 4000ms;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    opacity: 0;
+}
+
+@keyframes slide2 {
+    0% {
+      transform: translate(-1vw, 0);
+      opacity:.1
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity:1
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    .mantra{
+        position: absolute;
+        line-height: 1.5vh;
+        top: 35vh;
+        left: 15vw;
+        text-transform: uppercase;
+        font-size: 5vw;
+        letter-spacing: 3px;
+        font-weight: 1000;
+        color: #ffffff;
+        animation-name: slide2;
+        animation-delay: 2000ms;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    
+    @keyframes slide2 {
+        0% {
+          transform: translate(-1vw, 0);
+          opacity:.1
+        }
+        100% {
+          transform: translate(0, 0);
+          opacity:1
+        }
+      }  
+}
+
+.aboutMeImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+}
+.aboutMeImg img{
+    width: 50vw;
+    height: 100vh;
+    transition: transform .2s;
+}
+
+.aboutMeImg img:hover{
+    transform: scale(.98)
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: 0; 
+}
+
+.aboutMe img{
+    width: 50%;
+    height: 100vh;
+    transition: transform .2s;
+}
+
+.aboutMe img:hover{
+    transform: scale(.98)
+}
+
+.aboutMeText{
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    color: #4f4f4f;
+    font-size: 1.5vw;
+    text-align: justify;
+    padding:  0 3vw;
+    line-height: 6vh;   
+}
+
+@media only screen and (max-width: 750px) {
+    .aboutMeImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin: 0;
+    }
+    .aboutMeImg img{
+        width: 100vw;
+        height: 100vh;
+        transition: transform .2s;
+    }
+
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 0; 
+    }
+
+    .aboutMe img{
+        width: 100vw;
+        height: 50vh;
+        transition: transform .2s;
+    }
+
+    .aboutMeText{
+        width: 100vw;
+        /* height: 50vh; */
+        background-color: #fff;
+        color: #4f4f4f;
+        font-size: 3.5vw;
+        text-align: justify;
+        padding:  0 3vw;
+        line-height: 6vh;
+    }
+}
+
+.aboutMeText a{
+    color: rgb(255,172,0);
+    text-decoration: none;
+}
+
+.aboutMeText h3{
+    color: rgb(255,172,0);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.techWrapper{
+    background: url(../../assets/TOPO_LT.svg);
+    background-size: cover;
+    background-color: #1c2222;
+    /* height: 100vh; */
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+}
+
+.techTitle{
+    width: 100vw;
+    line-height: 3vh;
+    padding-top: 3vh;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.border{
+    width: 15vw;
+    margin: 0 auto;
+    padding-top: 15vh;
+    border-bottom: 3px solid rgb(255,172,0);
+}
+
+.techProjects1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+.techProjects1 img{
+    width: 30vw;
+    height: 25vw;
+    margin: 0.5vw;
+    position: relative;
+    /* top: 10vh; */
+    z-index: 10;
+    border: 2px solid #000;
+    border-radius: 2px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.techProjects2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: -10vh;
+    position: relative;
+    /* top: 5vh; */
+}
+.techProjects2 img{
+    width: 30vw;
+    height: 25vw;
+    margin: 15vh 0.5vw;
+    border: 2px solid #000;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.skillWrapper{
+    height: 40vh;
+    width: 100vw;
+    background-color: rgb(255,172,0);
+    position: relative;
+    /* top: 100vh; */
+    display: flex;
+    flex-direction: row;
+}
+
+.skillWrapper h1{
+    margin-top: 0;
+    margin-left: 5vw;
+    font-weight: 1000;
+    position: relative;
+    top: 35%;
+    line-height: 5vh;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.skillLogos{
+    margin-top: 2vh;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skillLogos img{
+    height: 17vh;
+    margin: 0 1.5vw;
+}
+
+.contact{
+    /* height: 80vh; */
+    color: black;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    /* top: 100vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1vh 10vw;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.info p{
+    font-size: 1rem;
+    line-height: .5rem;
+}
+
+.fa-linkedin{
+    font-size: 2rem;
+    color: blue;
+}
+
+.fa-github{
+    font-size: 2rem;
+    color: grey
+}
+
+.contactInput{
+    padding: 20px;
+    width: 30vw;
+}

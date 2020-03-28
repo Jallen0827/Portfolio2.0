@@ -1,0 +1,205 @@
+ul{
+    list-style: none;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 1s ease-in;
+}
+
+.nav-hide{
+    top: -200px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: all 1s ease-out;
+}
+
+.nav-up{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    transition: all 1s ease-in;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(0, -5vw);
+      opacity:.1
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity:1
+    }
+  }
+
+  @keyframes slide2 {
+    0% {
+      transform: translate(-1vw, 0);
+      opacity:.1
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity:1
+    }
+  }
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 1.5rem;
+    
+}
+
+@keyframes slidein {
+    from {
+      margin-right: 100%;
+     opacity: 0;
+    }
+  
+    to {
+     margin-right: 0%;
+     opacity: 1;
+     animation-fill-mode: forwards
+    }
+  }
+
+.name{
+    font-size: 3vw;
+    letter-spacing: 3px;
+    font-weight: 1000;
+    color: rgb(255,172,0);
+    text-transform: uppercase;
+    padding-left: 4.5rem;
+    text-shadow: 5px 10px 10px rgba(80, 80, 80, 0.281);
+    border: black;
+    text-decoration: none;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+.nav-link{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.4vw;
+    line-height: 0.2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.link1{
+    animation-name: slide2;
+    animation-delay: 1500ms;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link2{
+    animation-name: slide2;
+    animation-delay: 2000ms;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link3{
+    animation-name: slide2;
+    animation-delay: 2400ms;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link4{
+    animation-name: slide2;
+    animation-delay: 3000ms;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.nav-link:hover{
+    color: darkgrey;
+}
+
+.nav-links{
+    margin-right: -5vw;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .nav-links {
+      display: none;
+    }
+    .hamburgerMenu{
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 15vw;
+    }
+    .name{
+        font-size: 7vw;
+        padding-left: 3.5vw;
+        letter-spacing: 2px;
+    }
+    .line{
+        width: 100%;
+        height: 0.8vw;
+        background-color: #fff;
+        transition: all 0.8s;
+    }
+    .change-1{
+        transform: rotateZ(-405deg) translate(-2vw, 1vw);
+    }
+    
+    .change-2{
+        opacity: 0;
+    }
+    
+    .change-3{
+        transform: rotateZ(405deg) translate(-1vw, -0.5vw);
+    }
+  }
+
+.nav-link:hover:after {
+    width:80%;
+    left: 0%;
+    margin: 0 auto;
+  }
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    background: rgb(255,172,0);
+    transition: all .5s ease-out;
+    width: 0;
+  }
+
+
+
+
+
+
